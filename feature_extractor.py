@@ -7,7 +7,7 @@ import sklearn.utils as skutils
 from sklearn.preprocessing import LabelEncoder
 from keras.applications import imagenet_utils
 from keras.applications.vgg16 import VGG16
-from keras.preprocessing.image import *
+from keras.preprocessing.image import load_img, img_to_array
 from tqdm import tqdm
 
 
@@ -17,9 +17,8 @@ class FeatureExtractor(object):
     
         
         if os.path.exists(output_path):
-                error_msg = (f'{output_path} already exists. '
-                f'Please delete it and tryagain.')
-        raise FileExistsError(error_msg)
+                error_msg = (f'{output_path} already exists. Please delete it and try again.')
+                raise FileExistsError(error_msg)
     
         self.model = model
         self.input_size = input_size
@@ -39,7 +38,7 @@ class FeatureExtractor(object):
         self.labels = self.db.create_dataset('labels',(num_instances,),dtype='int')
 
 
-        def extract_features(self,image_paths,labels,batch_size=64,shuffle=True):
+    def extract_features(self,image_paths,labels,batch_size=64,shuffle=True):
             if shuffle:
                 image_paths, labels = skutils.shuffle(image_paths,labels)
             encoded_labels = self.le.fit_transform(labels)
@@ -67,7 +66,7 @@ class FeatureExtractor(object):
             self._close()
         
 
-        def _add(self, rows, labels):
+    def _add(self, rows, labels):
             self.buffer['features'].extend(rows)
             self.buffer['labels'].extend(labels)
             if len(self.buffer['features']) >= self.buffer_size:
@@ -75,7 +74,7 @@ class FeatureExtractor(object):
 
 
 
-        def _flush(self):
+    def _flush(self):
             next_index = (self.current_index + len(self.buffer['features']))
             buffer_slice = slice(self.current_index, next_index)
             self.features[buffer_slice] = self.buffer['features']
@@ -84,14 +83,14 @@ class FeatureExtractor(object):
             self.buffer = {'features': [], 'labels': []}
 
 
-        def _store_class_labels(self, class_labels):
+    def _store_class_labels(self, class_labels):
             data_type = h5py.special_dtype(vlen=str)
             shape = (len(class_labels),)
             label_ds = self.db.create_dataset('label_names', shape, dtype=data_type)
             label_ds[:] = class_labels
         
 
-        def _close(self):
+    def _close(self):
             if len(self.buffer['features']) > 0:
                 self._flush()
             self.db.close()
