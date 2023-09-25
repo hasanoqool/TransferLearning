@@ -10,15 +10,15 @@ Feature extraction and Fine-tuning neural networks
     * Classify images using a pre-trained network using the Keras 
 
 #
-## Running detect_smiles.py
-* Train a binary classifier to classify face reactions (positive, negative) on the <b>SMILEs dataset</b>.
-* Dataset LINK : <b>https://github.com/hromi/SMILEsmileD/tree/master</b>
+## Running feature_extractor.py
+* <b>Extract features/b> from images using pre-traineed network.
+* Dataset LINK : <b>https://jovian.com/outlink?url=https%3A%2F%2Fs3.amazonaws.com%2Ffast-ai-imageclas%2Fstanford-cars.tgz</b>
 
 * <b>Sample Images</b> --> up (Negative) | down (Positive)
 
-    ![Negative](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/negative.png)
+    ![1](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/negative.png)
 
-    ![Positive](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/positive.png)
+    ![2](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/positive.png)
 
 * <b>Model Evaluation</b>:
 
