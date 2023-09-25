@@ -5,8 +5,8 @@ Feature extraction and Fine-tuning neural networks
 * The steps of this project are the following:
     * Extract features from images using pre-traineed network
     * Using extracted features to train a classifier
-    * Fine-tuning a network using the Keras API.
-    * Fine-tuning a network using tensorflow.
+    * Fine-tuning a network using the Keras API
+    * Fine-tuning a network using tensorflow
 
 #
 ## Running feature_extractor.py
@@ -20,18 +20,23 @@ Feature extraction and Fine-tuning neural networks
     ![3](https://github.com/hasanoqool/TransferLearning/blob/main/images/00003.jpg)
 
 #
+## Running feature_extractor.py
+* <b>Extract features</b> from images using pre-traineed network.
+
+#
 ## Running fine_tune_keras.py
 * <b>Fine-tuning</b> a network using the Keras API.
 
 #
-
-
 ## fine_tune_tf.py
 * <b>Fine-tuning</b> a network using tensorflow.
 
 #
 ## Contact
 * Reach me out here: https://www.linkedin.com/in/hasanoqool/
+
+
+
 
 
 
