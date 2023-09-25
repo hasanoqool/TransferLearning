@@ -11,7 +11,7 @@ Feature extraction and Fine-tuning neural networks
 
 #
 ## Running feature_extractor.py
-* <b>Extract features/b> from images using pre-traineed network.
+* <b>Extract features</b> from images using pre-traineed network.
 * Dataset LINK : <b>https://jovian.com/outlink?url=https%3A%2F%2Fs3.amazonaws.com%2Ffast-ai-imageclas%2Fstanford-cars.tgz</b>
 
 * <b>Sample Images</b>
