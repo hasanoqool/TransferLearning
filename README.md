@@ -3,12 +3,11 @@ Feature extraction and Fine-tuning neural networks
 
 # Overview
 * The steps of this project are the following:
-    * Train a binary classifier to classify face reactions (positive, negative)
-    * Train classifier to play RPS (Multi-Class)
-    * Train classifier to classify multi watches (Multi-Label)
+    * Extract features from images using pre-traineed network
+    * Using extracted features to train a classifier
+    * Train a classifier to classify multi watches (Multi-Label)
     * Implementing ResNet from scratch
-    * Classify images using a pre-trained network using the Keras API & TensorFlow Hub
-    * Apply Data augmentation for improving performance with the Keras API, tf.data and tf.image APIs
+    * Classify images using a pre-trained network using the Keras 
 
 #
 ## Running detect_smiles.py
