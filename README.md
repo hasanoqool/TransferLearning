@@ -17,8 +17,8 @@ Feature extraction and Fine-tuning neural networks
 * <b>Sample Images</b>
 
     ![1](https://github.com/hasanoqool/TransferLearning/blob/main/images/00001.jpg)
-    ![2](https://github.com/hasanoqool/TransferLearning/blob/main/images/00002.jpg))
-    ![3](https://github.com/hasanoqool/TransferLearning/blob/main/images/00003.jpg))
+    ![2](https://github.com/hasanoqool/TransferLearning/blob/main/images/00002.jpg)
+    ![3](https://github.com/hasanoqool/TransferLearning/blob/main/images/00003.jpg)
 
 * <b>Model Evaluation</b>:
 
