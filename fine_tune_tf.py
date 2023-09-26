@@ -55,10 +55,10 @@ def main():
     train_generator = augmenter.flow(X_train, y_train,BATCH_SIZE)
 
     EPOCHS = 20
-    model.compile(loss='categorical_crossentropy',optimizer=RMSprop(lr=1e-3),metrics=['accuracy'])
+    model.compile(loss='categorical_crossentropy',optimizer=RMSprop(learning_rate=1e-3),metrics=['accuracy'])
     model.fit(train_generator,steps_per_epoch=len(X_train) // BATCH_SIZE,validation_data=(X_test, y_test),epochs=EPOCHS)
     result = model.evaluate(X_test, y_test)
-    
+
     print(f'Test accuracy: {result[1]}')
 
 if __name__=='__main__':
