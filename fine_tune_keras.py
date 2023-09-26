@@ -83,7 +83,7 @@ def main():
 
     #warm up
     EPOCHS = 20
-    model.compile(loss='categorical_crossentropy',optimizer=RMSprop(lr=1e-3),metrics=["accuracy"])
+    model.compile(loss='categorical_crossentropy',optimizer=RMSprop(learning_rate=1e-3),metrics=["accuracy"])
 
     model.fit(train_generator,steps_per_epoch=len(X_train) // BATCH_SIZE, validation_data=(X_test, y_test), epochs=EPOCHS)
     result = model.evaluate(X_test, y_test)
@@ -95,7 +95,7 @@ def main():
         layer.trainable = True
 
     EPOCHS = 50
-    model.compile(loss='categorical_crossentropy',optimizer=SGD(lr=1e-3),metrics=['accuracy'])
+    model.compile(loss='categorical_crossentropy',optimizer=SGD(learning_rate=1e-3),metrics=['accuracy'])
 
     model.fit(train_generator,steps_per_epoch=len(X_train) // BATCH_SIZE,validation_data=(X_test, y_test),epochs=EPOCHS)
     result = model.evaluate(X_test, y_test)
