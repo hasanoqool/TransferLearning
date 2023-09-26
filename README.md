@@ -34,6 +34,7 @@ Feature extraction and Fine-tuning neural networks
     ![2](https://github.com/hasanoqool/TransferLearning/blob/main/images/2.jpg)
     ![3](https://github.com/hasanoqool/TransferLearning/blob/main/images/3.jpg)
 
+* <b>Test accuracy: 0.9375</b>
 #
 ## Running fine_tune_tf.py
 * <b>Fine-tuning</b> a network using tensorflow.
@@ -44,7 +45,8 @@ Feature extraction and Fine-tuning neural networks
     ![1](https://github.com/hasanoqool/TransferLearning/blob/main/images/4.jpg)
     ![2](https://github.com/hasanoqool/TransferLearning/blob/main/images/5.jpg)
     ![3](https://github.com/hasanoqool/TransferLearning/blob/main/images/6.jpg)
-
+    
+<b>Test accuracy: 0.9375</b>
 #
 ## Contact
 * Reach me out here: https://www.linkedin.com/in/hasanoqool/
