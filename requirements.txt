@@ -6,3 +6,5 @@ h5py
 tqdm
 pathlib
 glob
+pillow
+tensorflow-hub
