@@ -26,10 +26,24 @@ Feature extraction and Fine-tuning neural networks
 #
 ## Running fine_tune_keras.py
 * <b>Fine-tuning</b> a network using the Keras API.
+* Dataset LINK : <b>http://www.robots.ox.ac.uk/~vgg/data/flowers/17</b>
+
+* <b>Sample Images</b>
+
+    ![1](https://github.com/hasanoqool/TransferLearning/blob/main/images/1.jpg)
+    ![2](https://github.com/hasanoqool/TransferLearning/blob/main/images/2.jpg)
+    ![3](https://github.com/hasanoqool/TransferLearning/blob/main/images/3.jpg)
 
 #
 ## Running fine_tune_tf.py
 * <b>Fine-tuning</b> a network using tensorflow.
+* Dataset LINK : <b>http://www.robots.ox.ac.uk/~vgg/data/flowers/17</b>
+
+* <b>Sample Images</b>
+
+    ![1](https://github.com/hasanoqool/TransferLearning/blob/main/images/4.jpg)
+    ![2](https://github.com/hasanoqool/TransferLearning/blob/main/images/5.jpg)
+    ![3](https://github.com/hasanoqool/TransferLearning/blob/main/images/6.jpg)
 
 #
 ## Contact
@@ -37,6 +51,6 @@ Feature extraction and Fine-tuning neural networks
 
 
 
-
+https://github.com/hasanoqool/TransferLearning/blob/main/images/1.jpg
 
 
