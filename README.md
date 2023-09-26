@@ -28,7 +28,7 @@ Feature extraction and Fine-tuning neural networks
 * <b>Fine-tuning</b> a network using the Keras API.
 
 #
-## fine_tune_tf.py
+## Running fine_tune_tf.py
 * <b>Fine-tuning</b> a network using tensorflow.
 
 #
