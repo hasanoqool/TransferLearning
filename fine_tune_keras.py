@@ -103,5 +103,5 @@ def main():
     
     print(f'Test accuracy: {result[1]}')
 
-if __name__ == main():
+if __name__=='__main__':
     main()
