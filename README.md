@@ -48,9 +48,4 @@ Feature extraction and Fine-tuning neural networks
 #
 ## Contact
 * Reach me out here: https://www.linkedin.com/in/hasanoqool/
-
-
-
-https://github.com/hasanoqool/TransferLearning/blob/main/images/1.jpg
-
-
+#
